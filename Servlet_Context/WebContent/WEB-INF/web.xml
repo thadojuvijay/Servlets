@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Servlet_Context</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  <context-param>
+  <param-name>eno</param-name>
+  <param-value>1</param-value>
+  </context-param>
+  
+  
+  <servlet>
+  <servlet-name>servlet_context</servlet-name>
+  <servlet-class>com.servlet_context.Generic_ServletContext_Example</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>servlet_context</servlet-name>
+  <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+</web-app>
